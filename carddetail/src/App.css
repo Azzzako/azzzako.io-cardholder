@@ -2,38 +2,37 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: row;
 }
 
 .cards {
-  width: 30%;
-  height: 100%;
   background-image: url('./images/bg-main-desktop.png');
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 34px;
 }
 
 .front{
   position: relative;
   left: 10rem;
+  bottom: 18.5em;
 }
 
 .back{
   position: relative;
   left: 15rem;
+  top: 17em;
 }
 
 .forms {
-  width: 70%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: hsl(0, 0%, 100%);
-  flex-direction: column;
-  position: static;
+  
 }
 
 .inputs {
@@ -71,33 +70,131 @@ input {
   background-color: #2b155e;
   color: white;
 }
+
 .info_front{
-  position: fixed;
-  
+  position: absolute;
+  top: 22em;
 }
 
 
 
 .cardholder_name{
   position: relative;
-  bottom: 4.5em;
-  left: 9.2em;
+  bottom: 5.5em;
+  left: 8em;
   padding: 0;
   margin: 0;
   color: white;
   font-size: 15px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   font-weight: lighter;
+  display: flex;
 }
 
 
 
 .cardholder_number{
   position: relative;
-  bottom: 4em;
-  left: 7em;
-  letter-spacing: 2px;
+  bottom: 5em;
+  left: 6em;
+  letter-spacing: 3px;
   word-spacing: 10px;
   color: white;
   font-size: 20px;
+}
+
+.dat{
+  color: white;
+  position: relative;
+  bottom: 6em;
+  left: 27em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  width: 0;
+  margin: 0;
+}
+
+.logo{
+  position: relative;
+  bottom: 8em;
+  left: 7em;
+}
+
+
+.info_back{
+  display: flex;
+}
+
+.cvv{
+  color: hsl(279, 6%, 55%);
+  position: relative;
+  font-weight: bolder;
+  left: 25em;
+  top: 7.5em;
+  z-index: 1;
+}
+
+
+@media (max-width:1440px){
+ .App{
+  flex-direction: column;
+ }
+
+ .cards{
+  width: 100%;
+  height: 30%;
+ }
+
+ .forms{
+  height: 100%;
+ }
+
+ .front{
+  width: 70%;
+  top: 1em;
+  left: -27px;
+ }
+
+ .info_front{
+  top: -2em;
+  left: -90px;
+  position: relative;
+ }
+
+ .cardholder_name{
+  top: -4.8em;
+  left: 5em;
+ }
+
+ .cardholder_number{
+  top: -5.5em;
+  left: 5em;
+ }
+
+ .logo{
+  left: 3.6em;
+  top: -5em;
+  width: 20%;
+ }
+
+ .info_front>p{
+  font-size: 12px;
+ }
+
+ .back{
+  width: 70%;
+  top: 9em;
+  left: 30px;
+ }
+
+ .cvv{
+  left: 10em;
+  top: 4.3em;
+  font-size: 12px;
+ }
+
+ .dat{
+  font-size: 12px;
+  left: 20em;
+ }
 }

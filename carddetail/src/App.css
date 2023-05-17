@@ -13,6 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 34px;
 }
 
 .front{
@@ -32,7 +33,7 @@
   align-items: center;
   background-color: hsl(0, 0%, 100%);
   flex-direction: column;
-  position: inherit;
+  position: static;
 }
 
 .inputs {
@@ -69,4 +70,34 @@ input {
 .submit {
   background-color: #2b155e;
   color: white;
+}
+.info_front{
+  position: fixed;
+  
+}
+
+
+
+.cardholder_name{
+  position: relative;
+  bottom: 4.5em;
+  left: 9.2em;
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+
+
+
+.cardholder_number{
+  position: relative;
+  bottom: 4em;
+  left: 7em;
+  letter-spacing: 2px;
+  word-spacing: 10px;
+  color: white;
+  font-size: 20px;
 }

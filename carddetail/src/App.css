@@ -135,7 +135,7 @@ input {
 }
 
 
-@media (max-width:1440px){
+@media (max-width:960px){
  .App{
   flex-direction: column;
  }
